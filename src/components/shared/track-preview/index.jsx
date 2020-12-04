@@ -15,7 +15,13 @@ const TrackPreview = ({ track, artist, link, img }) => {
           </i>{" "}
         </p>
 
-        <span>{link ? <a href={link}>{artist} on Last.fm</a> : null}</span>
+        <span>
+          {link ? (
+            <a href={link} target="_blank" rel="noreferrer">
+              {artist} on Last.fm
+            </a>
+          ) : null}
+        </span>
       </div>
       <div className="track-img-container">
         {img ? (

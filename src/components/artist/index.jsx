@@ -6,12 +6,10 @@ import "./styles.scss";
 
 const ArtistInfo = ({ match, fetchArtistStart, artistInfo }) => {
   const artist = match.params.id;
-
   useEffect(() => {
     fetchArtistStart(artist);
   }, [artist, fetchArtistStart]);
 
-  console.log(artist);
   return (
     <section className="artist-container">
       {artistInfo ? (

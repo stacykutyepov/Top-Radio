@@ -6,8 +6,8 @@ import { fetchATrackStart } from "../../redux/tracks/tracks.actions";
 
 const SearchInput = ({ fetchATrackStart }) => {
   const [value, setValue] = useState("");
+
   const onInputChange = (e) => {
-    // check preventDefault
     if (e.keyPress === "13") {
       e.preventDefault();
     }
@@ -16,7 +16,6 @@ const SearchInput = ({ fetchATrackStart }) => {
 
   const onSearch = (e) => {
     e.preventDefault();
-    console.log(value);
     fetchATrackStart(value);
     setValue("");
   };
