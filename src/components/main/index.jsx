@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
-import TrackPreview from "../shared/track-preview";
-import "./styles.scss";
 import { connect } from "react-redux";
-import { LIMIT } from "../../constants/limit-tracks";
 import { fetchTracksStart } from "../../redux/tracks/tracks.actions";
+import { LIMIT } from "../../constants/limit-tracks";
+import TrackPreview from "../shared/track-preview";
 import ErrorMsg from "../shared/error-msg";
+import "./styles.scss";
 
 const Main = ({ fetchTracksStart, tracks, error }) => {
   useEffect(() => {
     fetchTracksStart();
-  }, [fetchTracksStart]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <section className="main-container">
       <h3>Top {LIMIT} Tracks from Last FM</h3>

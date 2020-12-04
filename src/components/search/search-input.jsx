@@ -8,9 +8,7 @@ const SearchInput = ({ fetchATrackStart }) => {
   const [value, setValue] = useState("");
 
   const onInputChange = (e) => {
-    if (e.keyPress === "13") {
-      e.preventDefault();
-    }
+    e.preventDefault();
     setValue(e.target.value);
   };
 
@@ -21,7 +19,7 @@ const SearchInput = ({ fetchATrackStart }) => {
   };
 
   return (
-    <form className="search-form">
+    <form className="search-form" onSubmit={onSearch}>
       <input
         className="search-input"
         type="text"
@@ -29,7 +27,7 @@ const SearchInput = ({ fetchATrackStart }) => {
         value={value}
         onChange={onInputChange}
       />
-      <button type="submit" className="search-button" onClick={onSearch}>
+      <button type="submit" className="search-button">
         {inputsData.search.buttonActionText}
       </button>
     </form>

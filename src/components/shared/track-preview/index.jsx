@@ -12,7 +12,7 @@ const TrackPreview = ({ track, artist, link, img }) => {
             <Link to={`/artist/${artist}`}>
               <strong>{artist}</strong>
             </Link>
-          </i>{" "}
+          </i>
         </p>
 
         <span>
