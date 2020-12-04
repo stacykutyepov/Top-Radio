@@ -1,3 +1,15 @@
+# App Preview
+
+## Main page
+<img width="630" alt="main" src="https://user-images.githubusercontent.com/62475313/101224777-ab603700-365d-11eb-81b8-b8ed1081c1fe.png">
+
+## Search Page
+<img width="630" alt="search" src="https://user-images.githubusercontent.com/62475313/101224779-ad29fa80-365d-11eb-85a6-9d0e0e03ba2e.png">
+
+## Artist Info
+<img width="630" alt="artist" src="https://user-images.githubusercontent.com/62475313/101224781-ae5b2780-365d-11eb-975e-2ebcb7f57b29.png">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
