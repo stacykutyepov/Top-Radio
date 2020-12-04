@@ -1,3 +1,5 @@
+@import "../../constants/css-vars.scss";
+
 .search-container {
   margin: 20px;
   .search-form {
@@ -7,16 +9,16 @@
       padding: 10px;
       border: none;
       border-radius: 4px;
-      background-color: ghostwhite;
+      background-color: $base-grey;
     }
     .search-button {
       padding: 10px;
-      background-color: gray;
+      background-color: $dark-grey;
       border-radius: 4px;
       border: none;
       color: white;
       &:hover {
-        background-color: darkcyan;
+        background-color: $dark-cyan;
       }
     }
   }

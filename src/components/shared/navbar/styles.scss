@@ -1,5 +1,7 @@
+@import "../../../constants/css-vars.scss";
+
 .nav {
-  background-color: azure;
+  background-color: $light-cyan;
   ul {
     display: flex;
     margin: 0px;
