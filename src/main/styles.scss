@@ -1,0 +1,24 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.track-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: honeydew;
+  border-radius: 10px;
+  .track-text-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .track-img-container {
+    .track-image {
+      max-width: 120px;
+      border-radius: 10px;
+    }
+  }
+}
