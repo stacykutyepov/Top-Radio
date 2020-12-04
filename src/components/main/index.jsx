@@ -14,7 +14,6 @@ const Main = ({ fetchTracksStart, tracks, error }) => {
     <section className="main-container">
       <h3>Top {LIMIT} Tracks from Last FM</h3>
       {error ? <ErrorMsg /> : null}
-
       {!tracks.length
         ? null
         : tracks.map((track, idx) => {
